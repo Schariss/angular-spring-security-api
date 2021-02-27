@@ -1,0 +1,6 @@
+<h2 style="margin-left:20px;">Les produits :</h2>
+<div *ngIf='products'>
+    <ul *ngFor="let p of products">
+        <li>nom : {{p.nom}}, quantité : {{p['quantité']}}, prix : {{p.prix}}</li>
+    </ul>
+</div>
